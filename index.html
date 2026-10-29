@@ -1,42 +1,343 @@
 
-<section id="menu" class="bagian">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Lakosa | Cafe dan Kuliner</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffaf3;
+      color: #3d2b1f;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4b2e24;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 3px;
+    }
+
+    nav {
+      background: #6f4937;
+      padding: 15px 8px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      color: #ffd49b;
+    }
+
+    .hero {
+      min-height: 360px;
+      padding: 70px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      background:
+        linear-gradient(#24150ab0, #24150ab0),
+        url("https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=1200&auto=format&fit=crop")
+        center/cover no-repeat;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      margin-bottom: 25px;
+    }
+
+    .tombol {
+      display: inline-block;
+      background: #a66b42;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .bagian {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .bagian h2 {
+      color: #6f4937;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .tentang {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .menu-card {
+      background: white;
+      border: 1px solid #e4cbb5;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px #00000012;
+      padding-bottom: 20px;
+    }
+
+    .menu-img {
+      display: block;
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      background: #ead7c3;
+    }
+
+    .menu-card h3 {
+      color: #79543f;
+      margin: 15px 8px 5px;
+      font-size: 21px;
+    }
+
+    .menu-card p {
+      padding: 0 10px;
+    }
+
+    .menu-card strong {
+      display: block;
+      color: #8b4c2d;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .galeri-container {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 15px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .galeri-container img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #ead7c3;
+    }
+
+    .kontak {
+      background: #f0e2d2;
+    }
+
+    .kontak p {
+      margin: 8px;
+    }
+
+    footer {
+      background: #4b2e24;
+      color: white;
+      text-align: center;
+      padding: 22px 12px;
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 29px;
+      }
+
+      .hero h2 {
+        font-size: 26px;
+      }
+
+      nav a {
+        margin: 4px 6px;
+        font-size: 14px;
+      }
+
+      .bagian {
+        padding: 38px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>CAFE LAKOSA</h1>
+    <p>Tempat Nyaman untuk Menikmati Kopi</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#menu">Menu</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="beranda" class="hero">
+    <div>
+      <h2>Selamat Datang di Cafe Lakosa</h2>
+      <p>Nikmati kopi, makanan, dan suasana yang nyaman.</p>
+      <a class="tombol" href="#menu">Lihat Menu Kami</a>
+    </div>
+  </section>
+
+  <section id="tentang" class="bagian">
+    <div class="tentang">
+      <h2>Tentang Kami</h2>
+      <p>
+        Cafe Lakosa merupakan konsep UMKM cafe untuk
+        menikmati minuman dan camilan, bersantai, belajar,
+        serta berkumpul bersama teman dan keluarga.
+        Kami ingin memberikan suasana yang nyaman
+        bagi setiap pengunjung.
+      </p>
+    </div>
+  </section>
+
+  <section id="menu" class="bagian">
     <h2>Menu Favorit</h2>
 
     <div class="menu-container">
 
-        <div class="menu-card">
-            <img
-                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500"
-                alt="Kopi susu"
-                class="menu-img">
-            <h3>Kopi Susu</h3>
-            <p>Kopi susu yang nikmat.</p>
-            <strong>Rp15.000</strong>
-        </div>
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop"
+          alt="Kopi susu"
+          loading="eager">
+        <h3>Kopi Susu</h3>
+        <p>Kopi dengan susu yang nikmat.</p>
+        <strong>Rp15.000</strong>
+      </div>
 
-        <div class="menu-card">
-            <img
-                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=500"
-                alt="Es teh"
-                class="menu-img">
-            <h3>Es Teh</h3>
-            <p>Teh segar untuk menemani hari.</p>
-            <strong>Rp8.000</strong>
-        </div>
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop"
+          alt="Es teh segar"
+          loading="eager">
+        <h3>Es Teh</h3>
+        <p>Minuman teh segar untuk menemani hari.</p>
+        <strong>Rp8.000</strong>
+      </div>
 
-        <div class="menu-card">
-            <img
-                src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=500"
-                alt="Roti dan camilan"
-                class="menu-img">
-            <h3>Roti Bakar</h3>
-            <p>Camilan untuk menemani kopi.</p>
-            <strong>Rp12.000</strong>
-        </div>
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&auto=format&fit=crop"
+          alt="Roti dan camilan"
+          loading="eager">
+        <h3>Roti Bakar</h3>
+        <p>Camilan lezat untuk menemani kopi.</p>
+        <strong>Rp12.000</strong>
+      </div>
+
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&auto=format&fit=crop"
+          alt="Minuman dingin"
+          loading="eager">
+        <h3>Minuman Cokelat</h3>
+        <p>Minuman cokelat yang nikmat.</p>
+        <strong>Rp13.000</strong>
+      </div>
+
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&auto=format&fit=crop"
+          alt="Pizza"
+          loading="eager">
+        <h3>Pizza</h3>
+        <p>Menu makanan untuk dinikmati bersama.</p>
+        <strong>Rp25.000</strong>
+      </div>
+
+      <div class="menu-card">
+        <img class="menu-img"
+          src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop"
+          alt="Kentang goreng"
+          loading="eager">
+        <h3>Kentang Goreng</h3>
+        <p>Camilan gurih dan renyah.</p>
+        <strong>Rp12.000</strong>
+      </div>
 
     </div>
 
-    <p class="catatan">
-        Menu dan harga di atas merupakan contoh.
+    <p style="margin-top:20px;font-size:13px;">
+      Catatan: menu dan harga merupakan contoh untuk tugas website.
     </p>
-</section>
+  </section>
+
+  <section id="galeri" class="bagian">
+    <h2>Galeri Cafe</h2>
+
+    <div class="galeri-container">
+      <img
+        src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=600&auto=format&fit=crop"
+        alt="Suasana cafe">
+
+      <img
+        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&auto=format&fit=crop"
+        alt="Interior cafe">
+
+      <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop"
+        alt="Kopi di cafe">
+    </div>
+  </section>
+
+  <section id="kontak" class="bagian kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Terima kasih telah mengunjungi Cafe Lakosa.</p>
+    <p>Alamat: isi alamat cafe yang sebenarnya</p>
+    <p>Instagram: isi akun Instagram cafe</p>
+    <p>WhatsApp: isi nomor kontak cafe</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Cafe Lakosa. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>
